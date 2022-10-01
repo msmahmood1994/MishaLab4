@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+<link href="simpleGridTemplate.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.progressbar.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.dialog.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.resizable.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.progressbar.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.dialog.min.js"></script>
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Header -->
+  <header class="header">
+    <h4 class="logo">Misha's Interests and Hobbies</h4>
+    <div id="Buttonset1">
+	    <button id="Button4">Home</button>
+	    <button id="Button5">Contact</button>
+	    <button id="Button6">About</button>
+    </div>
+  </header>
+  <!-- Hero Section -->
+
+  <section class="intro">
+    <div class="column">
+      <h3>Misha Mahmood</h3>
+      <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/175671711_10224248712142059_5328643728556797781_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=174925&_nc_ohc=iCD-mwZ5o8cAX-h9rw7&_nc_ht=scontent-lax3-1.xx&oh=00_AT9N8yerqlMaQAojgjOrR3e2rSxAIBjpqwd8f5Z9zPTRrQ&oe=634AD45F" alt="" class="profile"> </div>
+    <div class="column">
+      <p>My name is Misha Mahmood, and I am a graphic designer from Huntington Beach, California. I specialize in editorial, print, digital, packaging, social media, and user interface design.</p>
+      <p>I completed my B.F.A. in graphic design from the Savannah College of Art and Design. I am studying part-time at the University of Southern California to earn an M.S. in Integrated Design, Business, and Technology. I have worked in various industries such as advertising, wine, cannabis, and healthcare.</p>
+	  <p>When I'm not working on graphic design, I might be listening to music, star gaze into astronomy, and watch psychology lectures.</p>
+    </div>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="https://365thingsinhouston.com/wp-content/uploads/2022/04/top-concerts-live-shows-music-performances-in-houston-may-2022-coldplay-2-696x407.jpeg" alt="" width="2000" class="cards"/></a>
+      <h4><button id="Button1"><a href="Music.html">Music</a></button></h4>
+      <p class="text_column">I am a Music Fanatic. It has influence to my art and design. Music is a natural form of art.&nbsp;</p> 
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="https://media.allure.com/photos/6258aae770915e0a02f48f87/16:9/w_2560%2Cc_limit/Zodiac%2520glyphs%2520on%2520a%2520chart%2520against%2520a%2520starry%2520sky-Misconceptions%2520.jpg" alt="" width="2000" class="cards"/></a>
+      <h4><button id="Button2"><a href="Astrology.html">Astrology</a></button>
+      </h4>
+      <p class="text_column">When I was a little girl, I would always read horoscopes for fun.</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="https://www.cshl.edu/wp-content/uploads/2020/12/Brain_illustration.png" alt="" width="2000" class="cards"/></a>
+      <h4><button id="Button3"><a href="Neurology.html">Neurology</a></button>
+      </h4>
+      <p class="text_column">The brain is a fasicinatng and resilient organ. Psychology helps people in large part.</p>
+    </div>
+    
+	  <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+
+<p>Click the light bulb to turn on/off the light.</p>
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "pic_bulboff.gif";
+  } else {
+    image.src = "pic_bulbon.gif";
+  }
+}
+</script>
+
+
+    
+</div>
+  <!-- Footer Section -->
+  <footer id="contact">
+    <p class="hero_header">GET IN TOUCH WITH ME</p>
+    <div class="button">EMAIL ME </div>
+  </footer>
+  <!-- Copyrights Section -->
+<div class="copyright">&copy;2019 - <strong>GRID</strong></div>
+</div>
+<!-- Main Container Ends -->
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+$(function() {
+	$( "#Button1" ).button(); 
+});
+$(function() {
+	$( "#Button2" ).button(); 
+});
+$(function() {
+	$( "#Button3" ).button(); 
+});
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+$(function() {
+	$( "#Buttonset1" ).buttonset(); 
+});
+$(function() {
+	$( "#Progressbar1" ).progressbar(); 
+});
+$(function() {
+	$( "#RadioButtons1" ).buttonset(); 
+});
+$(function() {
+	$( "#Dialog1" ).dialog(); 
+});
+</script>
+</body>
+</html>
